@@ -1,0 +1,60 @@
+body {
+    font-size: 20px;
+}
+
+#content {
+    max-width: 60%;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+p, h3 {
+    font-size: 20px;
+    text-align: left;
+}
+
+hr {
+    height: 0.5px;
+    background-color: darkgray;
+    width: 80%;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #035f9c
+}
+
+h3 {
+    font-style: italic;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin: 50px auto;
+}
+
+#topics {
+    line-height: 1.5em;
+    margin: 0 auto;
+    width: 55%;
+}
+
+li {
+    text-align: left;
+}
+
+.list{
+    list-style-type: number;
+    margin-bottom: 10px;
+
+}
