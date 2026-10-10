@@ -26,7 +26,19 @@ button {
 }
 
 nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav.hide {
     display: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
 }
 
 main {
@@ -73,7 +85,6 @@ footer {
     }
 }
 
-
 /* Desktop */
 
 @media screen and (min-width: 1000px) {
@@ -92,15 +103,17 @@ footer {
         display: none;
     }
 
-    nav {
-        display: flex;
-        gap: 2rem;
-    }
+nav,
+nav.hide {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
 
-    nav a {
-        color: white;
-        text-decoration: none;
-    }
+nav a {
+    color: white;
+    text-decoration: none;
+}
 
     .gallery {
         grid-template-columns: repeat(3, 1fr);
@@ -109,4 +122,29 @@ footer {
     .gallery img {
         height: 300px;
     }
+}
+
+/* Image modal */
+dialog {
+    max-width: 90%;
+    max-height: 90vh;
+    padding: 1rem;
+    border: none;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+dialog img {
+    display: block;
+    max-width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+}
+
+.close-viewer {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
 }

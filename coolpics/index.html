@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +7,14 @@
     <meta name="description" content="Cool Pics responsive photo gallery">
     <title>Cool Pics</title>
     <link rel="stylesheet" href="coolpics.css">
+    <script src="coolpics.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>📷 Cool Pics</h1>
 
-        <button>Menu</button>
+        <button class="menu-btn">Menu</button>
 
         <nav>
             <a href="#">Home</a>
@@ -26,14 +28,19 @@
         <h2>Current Work</h2>
 
         <section class="gallery">
-            <img src="norris-sm.jpg" alt="Hot Springs">
-            <img src="norris-sm.jpg" alt="Hot Springs">
-            <img src="norris-sm.jpg" alt="Hot Springs">
-            <img src="norris-sm.jpg" alt="Hot Springs">
-            <img src="norris-sm.jpg" alt="Hot Springs">
-            <img src="norris-sm.jpg" alt="Hot Springs">
+            <img src="images/norris-sm.jpg" alt="Hot Springs">
+            <img src="images/norris-sm.jpg" alt="Hot Springs">
+            <img src="images/norris-sm.jpg" alt="Hot Springs">
+            <img src="images/norris-sm.jpg" alt="Hot Springs">
+            <img src="images/norris-sm.jpg" alt="Hot Springs">
+            <img src="images/norris-sm.jpg" alt="Hot Springs">
         </section>
     </main>
+
+    <dialog>
+        <button class="close-viewer" aria-label="Close image">X</button>
+        <img src="" alt="">
+    </dialog>
 
     <footer>
         <p>&copy; 2026 Cool Pics</p>
