@@ -1,6 +1,9 @@
+```css
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: Roboto, sans-serif;
 }
 
@@ -28,12 +31,17 @@ section {
 nav a {
     padding: 20px;
     color: black;
-    display: none;
+    display: block;
 }
 
 nav a:hover {
     text-decoration: none;
     color: #616061;
+}
+
+/* Hide the navigation menu on mobile by default */
+.hide {
+    display: none;
 }
 
 .menu-btn {
@@ -49,31 +57,51 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Animate the hamburger button into an X */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
 }
 
 footer {
     text-align: center;
 }
 
-
-/* Larger screens */
-
+/* Tablet and desktop screens */
 @media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .menu-btn {
         display: none;
     }
 
-    nav {
-        display: flex;
-        justify-content: center;
-    }
-
     nav a {
-        display: block;
+        display: inline-block;
     }
 
-    main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    nav {
+        display: block;
+        text-align: right;
     }
 }
+
+/* Larger desktop screens */
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+```
