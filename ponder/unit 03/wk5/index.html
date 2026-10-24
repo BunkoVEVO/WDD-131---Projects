@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flick Picks movie reviews, ratings, and recommendations.">
+  <title>Flick Picks | Movie Reviews</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="index.html">Flick Picks</a>
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#movie-list">Reviews</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="intro" aria-labelledby="page-heading">
+      <p class="eyebrow">Find your next favorite</p>
+      <h1 id="page-heading">Movie Picks Worth Watching</h1>
+      <p>Quick reviews, helpful details, and recommendations for your next movie night.</p>
+    </section>
+
+    <section id="movie-list" class="movie-section" aria-labelledby="reviews-heading">
+      <div class="section-heading">
+        <h2 id="reviews-heading">Featured Reviews</h2>
+        <p>Two very different stories, each worth a look.</p>
+      </div>
+
+      <div class="movie-grid">
+        <article class="movie">
+          <img
+            src="https://wddbyui.github.io/wdd131/images/spiderman.png"
+            alt="Miles Morales swinging through the city"
+            width="700"
+            height="400"
+          >
+          <div class="movie-content">
+            <h3>Spider-Man: Into the Spider-Verse</h3>
+            <dl class="movie-details">
+              <div><dt>Release Date</dt><dd>December 14, 2018</dd></div>
+              <div><dt>Recommended Age</dt><dd>10+</dd></div>
+              <div><dt>Genre</dt><dd>Action / Adventure</dd></div>
+            </dl>
+            <p class="rating">
+              <span class="rating-label">Rating:</span>
+              <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span>
+            </p>
+            <p class="description">Miles Morales becomes the Spider-Man of his reality and crosses paths with others from the multiverse. With bold animation, memorable characters, and plenty of action, this is a fresh take on the superhero story.</p>
+          </div>
+        </article>
+
+        <article class="movie">
+          <img
+            src="https://wddbyui.github.io/wdd131/images/heaven.png"
+            alt="A young couple and missionaries in a row boat on the ocean"
+            width="700"
+            height="400"
+          >
+          <div class="movie-content">
+            <h3>The Other Side of Heaven</h3>
+            <dl class="movie-details">
+              <div><dt>Release Date</dt><dd>December 14, 2001</dd></div>
+              <div><dt>Recommended Age</dt><dd>10+</dd></div>
+              <div><dt>Genre</dt><dd>Drama / Religious</dd></div>
+            </dl>
+            <p class="rating">
+              <span class="rating-label">Rating:</span>
+              <span class="stars" role="img" aria-label="4 out of 5 stars">★★★★<span class="empty-star" aria-hidden="true">★</span></span>
+            </p>
+            <p class="description">Based on the true story of Elder John H. Groberg, a missionary in Tonga in the 1950s, this film tells a story of faith, hardship, cultural discovery, and miracles.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Flick Picks</h2>
+      <p>Flick Picks makes it easier to discover movies by sharing quick summaries, basic details, and straightforward ratings.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year">2026</span> Flick Picks. Movie opinions for your next movie night.</p>
+  </footer>
+</body>
+</html>
