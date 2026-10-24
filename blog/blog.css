@@ -119,6 +119,24 @@ footer {
   color: #fff;
 }
 
+/* Container for dynamic articles */
+#articles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Article metadata */
+.book-date p {
+  margin: bottom 0.75rem; 
+}
+
+/* Rating stars */
+.book-content {
+  color: #9b3d20;
+  letter-spacing:2px;
+}
+
 /* Responsive layout for smaller screens */
 @media screen and (max-width: 600px) {
   nav ul {
